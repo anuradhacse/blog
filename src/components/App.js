@@ -14,11 +14,14 @@ class App extends React.Component {
             <div class="three wide column">
               <TableContent />
             </div>
-            <div class="seven wide column">
+            <div class="four wide column">
               <Post />
             </div>
-            <div class="six wide column">
+            <div class="seven wide column">
               <PostsList />
+            </div>
+            <div class="two wide column">
+            <div class="ui skyscraper test ad" data-text="Skyscraper"></div>
             </div>
           </div>
         </div>

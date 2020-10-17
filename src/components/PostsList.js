@@ -5,7 +5,7 @@ import JavaImage from "../images/java.jpeg";
 
 const PostsList = () => {
   return (
-    <div className="ui  animated divided items">
+    <div className="ui animated divided items">
       <div className="item">
         <img className="ui small image" alt="logo" src={ReactImage}></img>
         <div className="middle aligned content">

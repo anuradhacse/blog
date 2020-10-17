@@ -3,12 +3,7 @@ import UserImage from "../images/user.jpg";
 
 const Header = () => {
   return (
-    <div className="ui text tiny menu ">
-      {/* <img
-        className="item ui top aligned  tiny image"
-        alt="logo"
-        src={Logo}
-      ></img> */}
+    <div className="ui  secondary pointing tiny menu ">
       <a class="header item">
         Good Morning <i className="smile icon yellow big"></i>{" "}
       </a>
