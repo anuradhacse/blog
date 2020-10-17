@@ -3,7 +3,7 @@ import UserImage from "../images/user.jpg";
 
 const Header = () => {
   return (
-    <div className="ui  secondary pointing tiny menu ">
+    <div className="ui  secondary pointing tiny stackable menu ">
       <a class="header item">
         Good Morning <i className="smile icon yellow big"></i>{" "}
       </a>

@@ -5,7 +5,7 @@ import ReactImage from "../images/react.jpeg";
 const Post = () => {
   return (
     <div>
-      <div className="ui card">
+      <div className="ui card stackable">
         <div class="content">
           <div class="right floated meta">14h</div>
           <img class="ui avatar image" src={UserImage} />

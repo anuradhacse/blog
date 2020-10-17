@@ -33,6 +33,48 @@ const TableContent = () => {
           <div className="description">Java tutorials</div>
         </div>
       </div>
+      <div className="item">
+        <i className="folder icon big blue"></i>
+        <div className="content">
+          <div className="header">Java</div>
+          <div className="description">Java tutorials</div>
+        </div>
+      </div>
+      <div className="item">
+        <i className="folder icon big blue"></i>
+        <div className="content">
+          <div className="header">Java</div>
+          <div className="description">Java tutorials</div>
+        </div>
+      </div>
+      <div className="item">
+        <i className="folder icon big blue"></i>
+        <div className="content">
+          <div className="header">Java</div>
+          <div className="description">Java tutorials</div>
+        </div>
+      </div>
+      <div className="item">
+        <i className="folder icon big blue"></i>
+        <div className="content">
+          <div className="header">Java</div>
+          <div className="description">Java tutorials</div>
+        </div>
+      </div>
+      <div className="item">
+        <i className="folder icon big blue"></i>
+        <div className="content">
+          <div className="header">Java</div>
+          <div className="description">Java tutorials</div>
+        </div>
+      </div>
+      <div className="item">
+        <i className="folder icon big blue"></i>
+        <div className="content">
+          <div className="header">Java</div>
+          <div className="description">Java tutorials</div>
+        </div>
+      </div>
     </div>
   );
 };

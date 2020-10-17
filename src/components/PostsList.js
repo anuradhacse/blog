@@ -5,7 +5,7 @@ import JavaImage from "../images/java.jpeg";
 
 const PostsList = () => {
   return (
-    <div className="ui animated divided items">
+    <div className="ui divided stackable items ">
       <div className="item">
         <img className="ui small image" alt="logo" src={ReactImage}></img>
         <div className="middle aligned content">
@@ -42,6 +42,19 @@ const PostsList = () => {
           </div>
         </div>
       </div>
+      <div className="item">
+        <img className="ui small image" alt="logo" src={JavaImage}></img>
+        <div className="middle aligned content">
+          <div className="header">Java 101</div>
+          <div className="description">
+            In this tutorial you will learn how to get started with Java
+          </div>
+          <div className="extra">
+            Oct 16 . 10 min read . <i className="star icon small"></i>
+          </div>
+        </div>
+      </div>
+      
     </div>
   );
 };

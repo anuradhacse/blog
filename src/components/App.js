@@ -9,19 +9,42 @@ class App extends React.Component {
     return (
       <div className="ui container">
         <Header></Header>
-        <div class="ui three column  grid">
-          <div class="row">
-            <div class="three wide column">
+        <div className="ui relaxed stackable grid">
+          <div className="row">
+            <div className="three wide column">
               <TableContent />
             </div>
-            <div class="four wide column">
+            <div className="four wide column">
               <Post />
             </div>
-            <div class="seven wide column">
+            <div className="seven wide column">
               <PostsList />
             </div>
-            <div class="two wide column">
-            <div class="ui skyscraper test ad" data-text="Skyscraper"></div>
+            <div className="two wide column">
+              {/* <div
+                className="ui skyscraper test ad" style={{height:'100'}}
+                data-text="Skyscraper"
+              ></div> */}
+              <div
+                class="ui vertical banner test ad"
+                data-text="Vertical Banner"
+              ></div>
+              <div
+                class="ui vertical banner test ad"
+                data-text="Vertical Banner"
+              ></div>
+            </div>
+          </div>
+          <div class="ui divider"></div>
+          <div className="row">
+            <div className="five wide column">
+              <PostsList />
+            </div>
+            <div className="five wide column">
+              <PostsList />
+            </div>
+            <div className="six wide column">
+              <PostsList />
             </div>
           </div>
         </div>
