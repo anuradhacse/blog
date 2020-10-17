@@ -2,6 +2,7 @@ import React from "react";
 import ReactImage from "../images/react.jpeg";
 import DockerImage from "../images/docker.png";
 import JavaImage from "../images/java.jpeg";
+import BitcoinImage from "../images/bitcoin.jpeg";
 
 const PostsList = () => {
   return (
@@ -43,9 +44,9 @@ const PostsList = () => {
         </div>
       </div>
       <div className="item">
-        <img className="ui small image" alt="logo" src={JavaImage}></img>
+        <img className="ui small image" alt="logo" src={BitcoinImage}></img>
         <div className="middle aligned content">
-          <div className="header">Java 101</div>
+          <div className="header">Bitcoin 101</div>
           <div className="description">
             In this tutorial you will learn how to get started with Java
           </div>
@@ -54,7 +55,6 @@ const PostsList = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

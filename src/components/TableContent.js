@@ -36,43 +36,43 @@ const TableContent = () => {
       <div className="item">
         <i className="folder icon big blue"></i>
         <div className="content">
-          <div className="header">Java</div>
-          <div className="description">Java tutorials</div>
+          <div className="header">Spring</div>
+          <div className="description">Spring tutorials</div>
         </div>
       </div>
       <div className="item">
         <i className="folder icon big blue"></i>
         <div className="content">
-          <div className="header">Java</div>
-          <div className="description">Java tutorials</div>
+          <div className="header">Golang</div>
+          <div className="description">Golang tutorials</div>
         </div>
       </div>
       <div className="item">
         <i className="folder icon big blue"></i>
         <div className="content">
-          <div className="header">Java</div>
-          <div className="description">Java tutorials</div>
+          <div className="header">Docker</div>
+          <div className="description">Docker tutorials</div>
         </div>
       </div>
       <div className="item">
         <i className="folder icon big blue"></i>
         <div className="content">
-          <div className="header">Java</div>
-          <div className="description">Java tutorials</div>
+          <div className="header">Bitcoin</div>
+          <div className="description">Bitcoin tutorials</div>
         </div>
       </div>
       <div className="item">
         <i className="folder icon big blue"></i>
         <div className="content">
-          <div className="header">Java</div>
-          <div className="description">Java tutorials</div>
+          <div className="header">Python</div>
+          <div className="description">Python tutorials</div>
         </div>
       </div>
       <div className="item">
         <i className="folder icon big blue"></i>
         <div className="content">
-          <div className="header">Java</div>
-          <div className="description">Java tutorials</div>
+          <div className="header">HTML</div>
+          <div className="description">HTML tutorials</div>
         </div>
       </div>
     </div>
