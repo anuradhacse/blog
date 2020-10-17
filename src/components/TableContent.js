@@ -2,10 +2,10 @@ import React from "react";
 
 const TableContent = () => {
   return (
-    <div className="ui list">
-      <div className="item">
+    <div className="ui divided relaxed list">
+      <div className="item active">
         <i className="folder icon big blue"></i>
-        <div className="content">
+        <div className="middle aligned content">
           <div className="header">React</div>
           <div className="description">React tutorials list you can find</div>
           <div className="list">
