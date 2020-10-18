@@ -1,82 +1,78 @@
 import React from "react";
+import { Accordion, Icon } from "semantic-ui-react";
 
-const TableContent = () => {
-  return (
-    <div className="ui divided relaxed list">
-      <div className="item active">
-        <i className="folder icon big blue"></i>
-        <div className="middle aligned content">
-          <div className="header">React</div>
-          <div className="description">React tutorials list you can find</div>
-          <div className="list">
-            <div className="item">
-              <i className="folder icon big blue"></i>
-              <div class="content">
-                <div class="header">site</div>
-                <div class="description">Your site's theme</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="item">
-        <i className="folder icon big blue"></i>
-        <div className="content">
-          <div className="header">Docker</div>
-          <div className="description">Docker tutorials</div>
-        </div>
-      </div>
-      <div className="item">
-        <i className="folder icon big blue"></i>
-        <div className="content">
-          <div className="header">Java</div>
-          <div className="description">Java tutorials</div>
-        </div>
-      </div>
-      <div className="item">
-        <i className="folder icon big blue"></i>
-        <div className="content">
-          <div className="header">Spring</div>
-          <div className="description">Spring tutorials</div>
-        </div>
-      </div>
-      <div className="item">
-        <i className="folder icon big blue"></i>
-        <div className="content">
-          <div className="header">Golang</div>
-          <div className="description">Golang tutorials</div>
-        </div>
-      </div>
-      <div className="item">
-        <i className="folder icon big blue"></i>
-        <div className="content">
-          <div className="header">Docker</div>
-          <div className="description">Docker tutorials</div>
-        </div>
-      </div>
-      <div className="item">
-        <i className="folder icon big blue"></i>
-        <div className="content">
-          <div className="header">Bitcoin</div>
-          <div className="description">Bitcoin tutorials</div>
-        </div>
-      </div>
-      <div className="item">
-        <i className="folder icon big blue"></i>
-        <div className="content">
-          <div className="header">Python</div>
-          <div className="description">Python tutorials</div>
-        </div>
-      </div>
-      <div className="item">
-        <i className="folder icon big blue"></i>
-        <div className="content">
-          <div className="header">HTML</div>
-          <div className="description">HTML tutorials</div>
-        </div>
-      </div>
-    </div>
-  );
-};
+class TableContent extends React.Component {
+  state = { activeIndex: -1 };
+
+  handleClick = (e, titleProps) => {
+    const { index } = titleProps;
+    const { activeIndex } = this.state;
+    const newIndex = activeIndex === index ? -1 : index;
+
+    this.setState({ activeIndex: newIndex });
+  };
+
+  render() {
+    const { activeIndex } = this.state;
+
+    return (
+      <Accordion>
+        <Accordion.Title
+          active={activeIndex === 0}
+          index={0}
+          onClick={this.handleClick}
+        >
+          <Icon name="folder icon big blue" />
+          React tutorials
+        </Accordion.Title>
+        <Accordion.Content active={activeIndex === 0}>
+          <p>
+            A dog is a type of domesticated animal. Known for its loyalty and
+            faithfulness, it can be found as a welcome guest in many households
+            across the world.
+          </p>
+        </Accordion.Content>
+
+        <Accordion.Title
+          active={activeIndex === 1}
+          index={1}
+          onClick={this.handleClick}
+        >
+          <Icon name="folder icon big blue" />
+         Docker Tutorials
+        </Accordion.Title>
+        <Accordion.Content active={activeIndex === 1}>
+          <p>
+            There are many breeds of dogs. Each breed varies in size and
+            temperament. Owners often select a breed of dog that they find to be
+            compatible with their own lifestyle and desires from a companion.
+          </p>
+        </Accordion.Content>
+
+        <Accordion.Title
+          active={activeIndex === 2}
+          index={2}
+          onClick={this.handleClick}
+        >
+          <Icon name="folder icon big blue" />
+          JAVA
+        </Accordion.Title>
+        <Accordion.Content active={activeIndex === 2}>
+          <p>
+            Three common ways for a prospective owner to acquire a dog is from
+            pet shops, private owners, or shelters.
+          </p>
+          <p>
+            A pet shop may be the most convenient way to buy a dog. Buying a dog
+            from a private owner allows you to assess the pedigree and
+            upbringing of your dog before choosing to take it home. Lastly,
+            finding your dog from a shelter, helps give a good home to a dog who
+            may not find one so readily.
+          </p>
+        </Accordion.Content>
+      </Accordion>
+    );
+  }
+}
 
 export default TableContent;

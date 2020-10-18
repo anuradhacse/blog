@@ -6,7 +6,7 @@ import BitcoinImage from "../images/bitcoin.jpeg";
 
 const PostsList = () => {
   return (
-    <div className="ui divided stackable items ">
+    <div className="ui divided stackable animated list items ">
       <div className="item">
         <img className="ui small image" alt="logo" src={ReactImage}></img>
         <div className="middle aligned content">

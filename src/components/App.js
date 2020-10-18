@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div className="ui container">
         <Header></Header>
-        <div className="ui relaxed stackable grid">
+        <div className="ui relaxed  stackable animated grid">
           <div className="row">
             <div className="three wide column">
               <TableContent />
@@ -37,15 +37,15 @@ class App extends React.Component {
           </div>
           <div class="ui divider"></div>
           <div className="row">
-            <div className="five wide column">
+            <div className="eight wide column">
               <PostsList />
             </div>
-            <div className="five wide column">
+            <div className="eight wide column">
               <PostsList />
             </div>
-            <div className="six wide column">
+            {/* <div className="six wide column">
               <PostsList />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
